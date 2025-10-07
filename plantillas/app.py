@@ -4,8 +4,27 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    alumnos = ["Fer", "lia", "Lidia"]
-    return render_template('index.html', creador="Melannie Abril Pascual Torres",nombres=alumnos)
+    return render_template('index.html')
+
+@app.route('/Inicio')
+def index():
+    return render_template('inicio.html')
+
+@app.route('/Animales ')
+def index():
+    return render_template('animales.html')
+
+@app.route('/Vehiculos')
+def index():
+    return render_template('vehiculos.html')
+
+@app.route('/Maravillas')
+def index():
+    return render_template('maravillas.html')
+
+@app.route('/Acerca')
+def index():
+    return render_template('acerca.html')
 
 @app.route('/crearCuenta')
 def crear_cuenta():

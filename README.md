@@ -54,7 +54,6 @@
                     <img src="..." class="img-fluid" alt="Camarón mantis">
                 </div>
 
-
             </section>
 
             <section id="maravillas" class="row text-light pt-5">
@@ -67,3 +66,16 @@
                 </div>
             </section>
         </main>
+
+        <h2>Bienvenidos</h2>
+    <p>En esta página podrás explorar diferentes temas y curiosidades del mundo.
+        </p>
+    p>Encontrarás información
+    sobre: </p>
+<ul>
+    <li>Animales Exóticos: Acuaticos, terrestres y aéreos.</li>
+        <li>Vehiculos Antiguos: Historia sobre su nacimiento y algunos de los vehiculos antiguos de
+            marcas.</li>
+        <li>Maravillas del Mundo: Hablaremos un poco sobre las 7 Maravillas del mundo</li>
+    <li>Acerca de: Esta sección contiene información sobre quien creo esta página</li>
+</ul>
