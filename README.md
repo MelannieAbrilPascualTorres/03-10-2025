@@ -3,41 +3,24 @@
 
 **Correo:** 24308060610062@cetis61.edu.mx
 
-ANIMALES
+Animales Exóticos Terrestres
 
-Los animales exóticos son especies que no son originarias del lugar donde se encuentran o que no son comunes como mascotas o fauna local.
-Suelen tener características físicas, comportamientos o hábitats poco comunes, y en muchos casos requieren cuidados especiales o están protegidos por leyes ambientales.
-
-Características principales:
-
-Origen inusual: provienen de regiones tropicales, desérticas, selváticas o marinas poco accesibles.
-
-Apariencia distintiva: colores intensos, formas poco comunes o adaptaciones sorprendentes (por ejemplo, alas, garras especiales o piel camuflada).
-
-Hábitos únicos: algunos pueden volar, planear, producir veneno o camuflarse.
-
-Cuidados difíciles: muchos necesitan dietas específicas, temperaturas controladas o ambientes muy parecidos a su hábitat natural.
-
-Protección legal: varios están en peligro de extinción o regulados por la CITES (Convención sobre el Comercio Internacional de Especies Amenazadas).
-Aéreos / con capacidad de vuelo o planeo (2 ejemplos)
-
-1. Peces voladores (familia Exocoetidae y otros relacionados)
-
-Estos peces saltan fuera del agua y usan sus aletas pectorales agrandadas como “alas” para planear por el aire, a veces decenas de metros, como estrategia para escapar de depredadores. 
-
-No “vuelan” al estilo de aves, sino que planean sobre la superficie del agua. 
+1. Axolote (Ambystoma mexicanum)
+   · Descripción: Este anfibio es una de las criaturas más sorprendentes. Es conocido como "el pez que camina", aunque en realidad es una salamandra. Es endémico de los canales del lago Xochimilco en México City. Su característica más famosa es la neotenia, meaning it retains its larval features (like the aleta dorsal y branquias externas) throughout its entire life, sin llegar a desarrollar una forma adulta terrestre. Vienen en diversos colores, desde el marrón oscuro hasta el blanco puro con ojos negros o albinos con ojos rojos.
+2. Pangolí (Manis spp.)
+   · Descripción: A menudo confundido con un reptil, el pangolín es un mamífero único cubierto de duras escamas de queratina (el mismo material de nuestras uñas). Es el único mamífero con esta característica. Cuando se siente amenazado, se enrolla formando una bola impenetrable. Son animales nocturnos y se alimentan de hormigas y termitas que atrapan con su larga y pegajosa lengua. Lamentablemente, es el animal traficado ilegalmente del mundo.
+3. Oso Hormiguero Gigante (Myrmecophaga tridactyla)
+   · Descripción: Este peculiar mamífero de Sudamérica es inconfundible. Tiene un hocico alargado y tubular, una cola larga y tupida (como un penacho) y una lengua que puede extenderse hasta 60 cm para capturar hormigas y termitas dentro de sus nidos. Sus garras delanteras son enormes y curvadas, que utiliza para romper los hormigueros, pero para caminar apoya los nudillos para no dañarlas.
 
 
+3 Animales Exóticos Aéreos
 
-2. Animales planeadores (gliding animals), como serpientes voladoras, dragones voladores, colugos, ranas voladoras
-
-Por ejemplo, algunas serpientes (como la serpiente “voladora” del paraíso) despliegan su cuerpo aplanado y se deslizan entre árboles. 
-
-Los “dragones voladores” (género Draco) tienen membranas entre las costillas que actúan como alas para planear entre árboles. 
-
-El colugo (a veces llamado “lémur volador”, aunque no es un lémur ni vuela realmente) tiene una membrana amplia que le permite deslizarse largas distancias entre árboles. 
-
-
+1. Guacamayo de Spix (Cyanopsitta spixii)
+   · Descripción: Famosa por la película Río, esta ave es tristemente un símbolo de la extinción. Está extinta en estado silvestre. Era un loro endémico de Brasil, de un hermoso color azul cobalto y una cara grisácea sin plumas. Su exotismo radica en su rareza y su triste historia. Actualmente, existen programas de cría en cautiverio con la esperanza de reintroducirlos en la naturaleza.
+2. Colibrí Pico Espada (Ensifera ensifera)
+   · Descripción: Este colibrí de los Andes es extraordinario por una razón: tiene el pico más largo de todas las aves del mundo en relación con el tamaño de su cuerpo. Su pico puede medir hasta 12 cm, que es más largo que el resto de su cuerpo (sin incluir la cola). Lo utiliza para alcanzar el néctar en el fondo de flores con corolas muy largas, como la Passiflora mixta, con la que ha coevolucionado.
+3. Murciélago Blanco Hondureño (Ectophylla alba)
+   · Descripción: Este pequeño murciélago es exótico por su adorable y peculiar apariencia. Mide solo unos 4-5 cm y tiene un pelaje blanco nieve y orejas y nariz de un vibrante color amarillo. Es "aéreo" porque vuela, pero su comportamiento es único: corta las hojas de las plantas de heliconia para doblarlas en forma de "tienda de campaña" y crear un refugio donde vive en pequeñas colonias. Es nativo de los bosques de Centroamérica.
 
 VEHÍCULOS
 Nacimiento 
