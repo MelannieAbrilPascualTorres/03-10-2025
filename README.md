@@ -3,7 +3,7 @@
 Esta actividad fue realizada con HTML, Python y Flask, aplicando herencia de plantillas con Jinja2.
 Se creó una **plantilla base** con encabezado, menú y pie de página.
 El sitio incluye las siguientes secciones:
-- **inicio:** Descripción del contenido del sitio.
+- **Inicio:** Descripción del contenido del sitio.
 - **Animales exóticos:** 2 acuáticos, 2 terrestres y 2 aéreos.
 - **Vehiculos antiguos:** Historia y 5 modelos con imágenes.
 - **Maravillas del Mundo:** información, imágenes, vídeos.
