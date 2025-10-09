@@ -2,24 +2,41 @@
 
 {% block contenido %}
 
-
-<div class="row pt-5">
-    <div class="col-12 col-md-6">
-        <h2>Bienvenidos</h2>
-        <p>En esta página podrás explorar diferentes temas y curiosidades del mundo.</p>
-        <p>Encontrarás información sobre:</p>
-        <ul>
-            <li>Animales Exóticos: Acuáticos, terrestres y aéreos.</li>
-            <li>Vehículos Antiguos: Historia sobre su nacimiento y algunos de los vehículos antiguos de marcas reconocidas.</li>
-            <li>Maravillas del Mundo: Hablaremos un poco sobre las 7 maravillas del mundo moderno.</li>
-            <li>Acerca de: Esta sección contiene información sobre quién creó esta página.</li>
-        </ul>
+<section class="pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>Bienvenidos</h2>
+            <p>En esta página podrás explorar diferentes temas y curiosidades del mundo.</p>
+            <p>Encontrarás información sobre:</p>
+            <ul>
+                <li>Animales Exóticos: Acuáticos, terrestres y aéreos.</li>
+                <li>Vehículos Antiguos: Historia sobre su nacimiento y algunos de los vehículos antiguos de marcas
+                    reconocidas.</li>
+                <li>Maravillas del Mundo: Hablaremos un poco sobre las 7 maravillas del mundo moderno.</li>
+                <li>Acerca de: Esta sección contiene información sobre quién creó esta página.</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <img src="{{ url_for('static', filename='img/animales.png') }}" class="img-fluid" alt="animales">
-    </div>
-</div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <h3>Animales exóticos:</h3>
+            <img src="{{ url_for('static', filename='img/animales.png') }}" class="img-fluid"
+                alt="Collage de 4 animales exóticos.">
+        </div>
 
+        <div class="col-12 col-md-4">
+            <h3>Vehiculos antiguos:</h3>
+            <img src="{{ url_for('static', filename='img/vehiculo.png') }}" class="img-fluid"
+                alt="Fotografia de un vehiculo antiguo.">
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3>Las 7 Maravillas del Mundo:</h3>
+            <img src="{{ url_for('static', filename='img/maravillass.png') }}" class="img-fluid"
+                alt="Collage que muestra las 7 Maravillas del Mundo.">
+        </div>
+    </div>
+</section>
 
 {% endblock %}
