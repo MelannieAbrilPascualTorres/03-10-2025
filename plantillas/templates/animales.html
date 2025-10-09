@@ -2,124 +2,145 @@
 
 {% block contenido %}
 
-<section class="row pt-5">
-    <div class="col-12">
-        <h2>Animales Exóticos</h2>
-        <p>Los animales exótico son especies que no son originarios del lugar donde se encuentran o que no son comunes
-            como mascotas o fauna local.</p>
-        <p>Suelen tener características físicas, comportamientos o hábitats poco comunes, y en muchos casos requieren
-            cuidados especiales o están protegidos por leyes ambientales.</p>
-        <h2>características: </h2>
-        <ol>
-            <li>Su origen es inusual, provienen de regiones tropicales, desérticas, selváticas o marinas poco
-                accesibles.</li>
-            <li>Tienen colores intensos, formas poco comunes o adaptaciones extrañas.</li>
-            <li>Requieren de cuidados especiales, dietas específicas, temperaturas controladas o ambientes similares a
-                su hábitad natural.</li>
-            <li>Varios de ellos están en peligro de extinción o regulados por la CITES (Convención sobre el Comercio
-                Internacional de Especies Amenazadas) asi que tienen protección legal</li>
-        </ol>
+<section class="pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>Animales Exóticos</h2>
+            <p>Los animales exótico son especies que no son originarios del lugar donde se encuentran o que no son
+                comunes
+                como mascotas o fauna local.</p>
+            <p>Suelen tener características físicas, comportamientos o hábitats poco comunes, y en muchos casos
+                requieren
+                cuidados especiales o están protegidos por leyes ambientales.</p>
+            <h2>características: </h2>
+            <ol>
+                <li>Su origen es inusual, provienen de regiones tropicales, desérticas, selváticas o marinas poco
+                    accesibles.</li>
+                <li>Tienen colores intensos, formas poco comunes o adaptaciones extrañas.</li>
+                <li>Requieren de cuidados especiales, dietas específicas, temperaturas controladas o ambientes similares
+                    a
+                    su hábitad natural.</li>
+                <li>Varios de ellos están en peligro de extinción o regulados por la CITES (Convención sobre el Comercio
+                    Internacional de Especies Amenazadas) asi que tienen protección legal</li>
+            </ol>
+        </div>
     </div>
 
-    <div class="col-12 pt-5">
-        <h3 class>Acuaticos</h3>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Acuaticos</h3>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h5>Axolote</h5>
+            <p>El lago de Xochimilco, en la Ciudad de México, es el único lugar donde habita el axolote, es una
+                salamandra que puede vivir siempre bajo el agua y mantener su aspecto juvenil.</p>
+            <p>Sin embargo, esta en grave peligro de extinción por la contaminación y las especies invasoras,
+                aunque se están haciendo esfuerzos para salvarlo, como el trabajo de un grupo de monjas que los
+                cría en cautiverio para aumentar su población.</p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+            <img src="{{ url_for('static', filename='img/axolote.png') }}" class="img-fluid"
+                alt="Axolote rosado mirando al frente.">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h5>Camarón mantis</h5>
+            <p>El camarón mantis es un crustáceo acuático exótico conocido por su increíble fuerza, capaz de
+                lanzar golpes con sus pinzas a una velocidad de hasta 80 km/h, suficientes para romper el
+                caparazón o la cabeza de sus oponentes.</p>
+            <p>A demás de su potencia, destaca por su belleza: Su cuerpo es similar a una cigala, con colores
+                verdes y rosados brillantes que lo hacen ver muy llamativo.</p>
+            <p>A pesar de ser atractivo, puede representar un riesgo para los ecosistemas si se introduce fuera de su
+                hábitad natural, por lo que es importante controlar su reproducción y evitar que se convierta en una
+                especie
+                invasora</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/camaronn.png') }}" class="img-fluid"
+                alt="Camaron mantis, es de muchos colores.">
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <h5>Axolote</h5>
-        <p>El lago de Xochimilco, en la Ciudad de México, es el único lugar donde habita el axolote, es una
-            salamandra que puede vivir siempre bajo el agua y mantener su aspecto juvenil.</p>
-        <p>Sin embargo, esta en grave peligro de extinción por la contaminación y las especies invasoras,
-            aunque se están haciendo esfuerzos para salvarlo, como el trabajo de un grupo de monjas que los
-            cría en cautiverio para aumentar su población.</p>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Terrestres</h3>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h5>Pangolín</h5>
+            <p>El pangolín es un mamífero exótico cubierto de escamas duras hechas de queratina. Esta armadura natural
+                lo
+                protege de los depredadores, y cuando se siente en peligro se
+                enrolla formando una bola compacta. Su dieta se basa en hormigas y termitas, que atrapa con su larga
+                lengua
+                pegajosa y su agudo sentido del olfato.</p>
+            <p>A pesar de su aspecto curioso e inofensivo, es el mamífero más traficado del mundo. Sus escamas son muy
+                valoradas en la medicina ilegal y su carne se considera un manjar en algunos países, por lo que está en
+                grave peligro de extinción.</p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-5">
+            <img src="{{ url_for('static', filename='img/pangolin.png') }}" class="img-fluid"
+                alt="Cría de pangolin sobre su madre.">
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h5>Oso hormiguero gigante</h5>
+            <p>El oso hormiguero gigante es un mamífero terrestre que habita en selvas y sabanas de América Central y
+                del Sur. Se reconocer por su largo hocico, su cola peluda y sus garras poderosas, que usa para
+                abrir los nidos de termitas.</p>
+            <p>>Aunque no tiene dientes, su lengua puede medir más de medio metro y se mueve a gran velocidad para
+                atrapar muchos insectos en el día.</p>
+            <p>Es un animal solitario y pacífico, pero la deforestación y los
+                incendios han reducido su hábitat natural, esto lo coloco en la lista de especies vulnerables.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/osohorm.png') }}" class="img-fluid"
+                alt="Oso hormiguero gigante caminando por el césped.">
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Axolote">
-    </div>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Aéreos</h3>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <h5>Camarón mantis</h5>
-        <p>El camarón mantis es un crustáceo acuático exótico conocido por su increíble fuerza, capaz de
-            lanzar golpes con sus pinzas a una velocidad de hasta 80 km/h, suficientes para romper el
-            caparazón o la cabeza de sus oponentes.</p>
-        <p>A demás de su potencia, destaca por su belleza: Su cuerpo es similar a una cigala, con colores
-            verdes y rosados brillantes que lo hacen ver muy llamativo.</p>
-        <p>A pesar de ser atractivo, puede representar un riesgo para los ecosistemas si se introduce fuera de su
-            hábitad natural, por lo que es importante controlar su reproducción y evitar que se convierta en una especie
-            invasora</p>
-    </div>
+        <div class="col-12 col-md-8">
+            <h5>Colibrí pico Espada</h5>
+            <p>El colibrí pico de espada es una de las aves más sorprendentes, ya que su pico es más largo que
+                el resto de su cuerpo. Vive en los bosques andinos de Sudamérica, usa su pico alargado para
+                alcanzar el néctar de flores muy profundas a las que los otros colibríes no pueden llegar.</p>
+            <p>A pesar de ser muy pequeñito, es un animal muy ágil y territorial. Vuela de una manera rapida y precisa
+                que le permite mantenerse suspendido en el aire mientras se alimenta. No esta en peligro de extinción
+                pero la
+                perdida de bosques amenaza su supervivencia.</p>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Camarón mantis">
-    </div>
+        <div class="col-12 col-md-4 mb-5">
+            <img src="{{ url_for('static', filename='img/colibri.png') }}" class="img-fluid"
+                alt="Colibrí pico de espada volando sobre un árbol.">
+        </div>
 
-    <div class="col-12 pt-5">
-        <h3>Terrestres</h3>
-    </div>
+        <div class="col-12 col-md-8">
+            <h5>Guacamayo de Spix</h5>
+            <p>La guacamaya de Spix, es un ave originaria de Brasil que se hizo
+                famosa por sus plumas de color azul. Su población fue desapareciendo debido a la destrucción de su
+                hábitat y al tráfico ilegal de aves exóticas, hasta que fue declarada extinta en estado salvaje.</p>
+            <p>Pero gracias a los programas de conservación, se han criado guacamayas de Spix en cautiverio y algunas
+                han sido
+                liberadas nuevamente en la naturaleza.</p>
+            <p>Su futuro sigue siendo incierto, sin embargo, los esfuerzos
+                internacionales buscan que esta especie vuelva a volar libre en su entorno natural.</p>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <h5>Pangolí</h5>
-        <p>El lago de Xochimilco, en la Ciudad de México, es el único lugar donde habita el axolote, es una
-            salamandra que puede vivir siempre bajo el agua y mantener su aspecto juvenil.</p>
-        <p>Sin embargo, esta en grave peligro de extinción por la contaminación y las especies invasoras,
-            aunque se están haciendo esfuerzos para salvarlo, como el trabajo de un grupo de monjas que los
-            cría en cautiverio para aumentar su población.</p>
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/guacamayo.png') }}" class="img-fluid"
+                alt="Guacamayo azul, atrás de el hay una reja.">
+        </div>
     </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Pangolí">
-    </div>
-
-    <div class="col-12 col-md-6">
-        <h5>Oso hormiguero gigante</h5>
-        <p>El camarón mantis es un crustáceo acuático exótico conocido por su increíble fuerza, capaz de
-            lanzar golpes con sus pinzas a una velocidad de hasta 80 km/h, suficientes para romper el
-            caparazón o la cabeza de sus oponentes.</p>
-        <p>A demás de su potencia, destaca por su belleza: Su cuerpo es similar a una cigala, con colores
-            verdes y rosados brillantes que lo hacen ver muy llamativo.</p>
-        <p>A pesar de ser atractivo, puede representar un riesgo para los ecosistemas si se introduce fuera de su
-            hábitad natural, por lo que es importante controlar su reproducción y evitar que se convierta en una especie
-            invasora</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Oso hormiguero gigante">
-    </div>
-
-    <div class="col-12 pt-5">
-        <h3>Aéreos</h3>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <h5>Colibrí pico Espada</h5>
-        <p>El lago de Xochimilco, en la Ciudad de México, es el único lugar donde habita el axolote, es una
-            salamandra que puede vivir siempre bajo el agua y mantener su aspecto juvenil.</p>
-        <p>Sin embargo, esta en grave peligro de extinción por la contaminación y las especies invasoras,
-            aunque se están haciendo esfuerzos para salvarlo, como el trabajo de un grupo de monjas que los
-            cría en cautiverio para aumentar su población.</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="colibrí pico de espada">
-    </div>
-
-    <div class="col-12 col-md-6">
-        <h5>Guacamayo de Spix</h5>
-        <p>El camarón mantis es un crustáceo acuático exótico conocido por su increíble fuerza, capaz de
-            lanzar golpes con sus pinzas a una velocidad de hasta 80 km/h, suficientes para romper el
-            caparazón o la cabeza de sus oponentes.</p>
-        <p>A demás de su potencia, destaca por su belleza: Su cuerpo es similar a una cigala, con colores
-            verdes y rosados brillantes que lo hacen ver muy llamativo.</p>
-        <p>A pesar de ser atractivo, puede representar un riesgo para los ecosistemas si se introduce fuera de su
-            hábitad natural, por lo que es importante controlar su reproducción y evitar que se convierta en una especie
-            invasora</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Guacamayo de spix">
-    </div>
-
 </section>
 
 {% endblock %}
