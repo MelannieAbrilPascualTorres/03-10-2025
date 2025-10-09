@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block titulo %}Las 7 Maravillas del Mundo{% endblock %}
+
 {% block contenido %}
 
 <section class="pt-5">
@@ -7,6 +9,11 @@
     <div class="row">
         <div class="col-12">
             <h2>Las 7 Maravillas del Mundo</h2>
+            <p>Las Siete Maravillas del Mundo son monumentos reconocidos por su valor histórico, arquitectónico y
+                cultural.</p>
+            <p>Representan el ingenio y la creatividad humana a lo largo del tiempo, desde antiguas civilizaciones
+                hasta grandes obras modernas.</p>
+            <p>Cada una guarda una historia única.</p>
         </div>
     </div>
 
@@ -33,7 +40,8 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <img src="{{ url_for('static', filename='img/muralla2.png') }}" class="img-fluid" alt="Muralla milenaria que recorre montañas.">
+            <img src="{{ url_for('static', filename='img/muralla2.png') }}" class="img-fluid"
+                alt="Muralla milenaria que recorre montañas.">
         </div>
 
     </div>
@@ -87,8 +95,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <img src="{{ url_for('static', filename='img/col2.png') }}" class="img-fluid"
-                alt="Anfiteatro romano.">
+            <img src="{{ url_for('static', filename='img/col2.png') }}" class="img-fluid" alt="Anfiteatro romano.">
         </div>
     </div>
 
@@ -114,8 +121,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <img src="{{ url_for('static', filename='img/chichen2.png') }}" class="img-fluid"
-                alt="Piramide Maya.">
+            <img src="{{ url_for('static', filename='img/chichen2.png') }}" class="img-fluid" alt="Piramide Maya.">
         </div>
     </div>
 
@@ -192,8 +198,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <img src="{{ url_for('static', filename='img/tajma2.png') }}" class="img-fluid"
-                alt="Mausoleo de mármol.">
+            <img src="{{ url_for('static', filename='img/tajma2.png') }}" class="img-fluid" alt="Mausoleo de mármol.">
         </div>
     </div>
 </section>
