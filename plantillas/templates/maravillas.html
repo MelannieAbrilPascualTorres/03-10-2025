@@ -2,126 +2,200 @@
 
 {% block contenido %}
 
-<section class="row pt-5">
-    <div class="col-12">
-        <h2>Las 7 Maravillas del Mundo</h2>
-        <p>Los animales exótico son especies que no son originarios del lugar donde se encuentran o que no son comunes
-            como mascotas o fauna local.</p>
-        <p>Suelen tener características físicas, comportamientos o hábitats poco comunes, y en muchos casos requieren
-            cuidados especiales o están protegidos por leyes ambientales.</p>
+<section class="pt-5">
+
+    <div class="row">
+        <div class="col-12">
+            <h2>Las 7 Maravillas del Mundo</h2>
+        </div>
     </div>
 
-    <div class="col-12 pt-5">
-        <h3 class>La Gran Muralla China (China)</h3>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3 class>La Gran Muralla China (China)</h3>
+        </div>
+
+        <div class="col-12 col-12 col-md-4">
+            <p>Construida entre los siglos V a.C. y XVI d.C., fue una enorme muralla defensiva levantada para proteger
+                el
+                imperio chino de invasiones del norte, especialmente de los mongoles.
+                Se extiende por más de 21,000 km y atraviesa montañas, desiertos y valles.
+                Además de su función militar, también simboliza la unión y la resistencia del pueblo chino.
+                Hoy es uno de los sitios turísticos más visitados del planeta.
+            </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/murallachina.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/muralla2.png') }}" class="img-fluid" alt="Muralla milenaria que recorre montañas.">
+        </div>
+
     </div>
 
-    <div class="col-12 col-md-6">
-        <p>Construida entre los siglos V a.C. y XVI d.C., fue una enorme muralla defensiva levantada para proteger el
-            imperio chino de invasiones del norte, especialmente de los mongoles.
-            Se extiende por más de 21,000 km y atraviesa montañas, desiertos y valles.
-            Además de su función militar, también simboliza la unión y la resistencia del pueblo chino.
-            Hoy es uno de los sitios turísticos más visitados del planeta.
-        </p>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Petra (Jordania)</h3>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <p>Petra es una ciudad tallada en piedra rosa por los nabateos hace más de 2,000 años.
+                Fue un importante centro comercial que conectaba las rutas entre Arabia, Egipto y Siria.
+                Su monumento más famoso es El Tesoro (Al-Khazneh), una impresionante fachada esculpida directamente en
+                la
+                roca.
+                Durante siglos, estuvo perdida y fue redescubierta en el siglo XIX. Hoy es Patrimonio de la Humanidad.
+            </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/petrajord.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/petra2.png') }}" class="img-fluid"
+                alt="Templo tallado en roca.">
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="La Gran Muralla China">
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>El Coliseo de Roma (Italia)</h3>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <p>Construido en el siglo I d.C., fue el anfiteatro más grande del Imperio Romano.
+                Allí se celebraban luchas de gladiadores, representaciones teatrales y espectáculos públicos.
+                Podía albergar a más de 50,000 personas y su diseño sirvió de inspiración para los estadios modernos.
+                Aunque gran parte está en ruinas por terremotos y el paso del tiempo, sigue siendo símbolo de Roma y su
+                historia imperial.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/coliseo.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/col2.png') }}" class="img-fluid"
+                alt="Anfiteatro romano.">
+        </div>
     </div>
 
-    <div class="col-12 pt-5">
-        <h3>Petra (Jordania)</h3>
+    <div class="row pt-4">
+        <div class="col-12 ">
+            <h3>Chichén Itzá (México)</h3>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <p>Antigua ciudad de la civilización maya ubicada en Yucatán.
+                Su construcción principal, la Pirámide de Kukulcán, está alineada astronómicamente: durante los
+                equinoccios,
+                la sombra forma la figura de una serpiente descendiendo por las escaleras.
+                Era un centro político, religioso y científico.
+                Refleja el avanzado conocimiento matemático y astronómico de los mayas.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/chichenitz.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/chichen2.png') }}" class="img-fluid"
+                alt="Piramide Maya.">
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <p>Petra es una ciudad tallada en piedra rosa por los nabateos hace más de 2,000 años.
-            Fue un importante centro comercial que conectaba las rutas entre Arabia, Egipto y Siria.
-            Su monumento más famoso es El Tesoro (Al-Khazneh), una impresionante fachada esculpida directamente en la
-            roca.
-            Durante siglos, estuvo perdida y fue redescubierta en el siglo XIX. Hoy es Patrimonio de la Humanidad.</p>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Cristo Redentor (Brasil)</h3>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <p>Situado en la cima del Cerro del Corcovado en Río de Janeiro, esta estatua de 30 metros de alto
+                representa a
+                Cristo con los brazos abiertos, símbolo de paz y acogida.
+                Fue inaugurada en 1931 y construida con hormigón armado y piedra jabón.
+                Además de su valor religioso, es un ícono cultural y turístico de Brasil.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/cristored.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/cristo1.png') }}" class="img-fluid"
+                alt="Jesús con brazos abiertos sobre Río.">
+        </div>
     </div>
 
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Petra">
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Machu Picchu (Perú)</h3>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <p>Antigua ciudad inca construida en el siglo XV, ubicada a más de 2,400 metros de altura en los Andes.
+                Se cree que fue un centro religioso o residencia real del emperador Pachacútec.
+                Fue redescubierta en 1911 por Hiram Bingham.
+                Su arquitectura se adapta perfectamente al entorno natural, con terrazas agrícolas, templos y
+                estructuras de
+                piedra encajadas con precisión asombrosa.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/macchupich.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/machupic2.png') }}" class="img-fluid"
+                alt="Ciudad inca en los Andes.">
+        </div>
     </div>
 
-    <div class="col-12 pt-5">
-        <h3>El Coliseo de Roma (Italia)</h3>
-    </div>
+    <div class="row pt-4">
+        <div class="col-12">
+            <h3>Taj Mahal (India)</h3>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <p>Construido en el siglo I d.C., fue el anfiteatro más grande del Imperio Romano.
-            Allí se celebraban luchas de gladiadores, representaciones teatrales y espectáculos públicos.
-            Podía albergar a más de 50,000 personas y su diseño sirvió de inspiración para los estadios modernos.
-            Aunque gran parte está en ruinas por terremotos y el paso del tiempo, sigue siendo símbolo de Roma y su
-            historia imperial.</p>
-    </div>
+        <div class="col-12 col-md-4">
+            <p>Construido en el siglo XVII por el emperador Shah Jahan en memoria de su esposa Mumtaz Mahal.
+                Es un mausoleo de mármol blanco decorado con piedras preciosas y simetría perfecta.
+                Simboliza el amor eterno y es una de las obras arquitectónicas más bellas del mundo.
+                Su diseño combina estilos islámicos, persas e indios.</p>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="El Coliseo de Roma">
-    </div>
+        <div class="col-12 col-md-4">
+            <video class="w-100" controls>
+                <source src="{{ url_for('static', filename='videos/tajmahtj.mp4') }}" type="video/mp4">
+                No se puede reproducir el video.
+            </video>
+        </div>
 
-    <div class="col-12 pt-5">
-        <h3>Chichén Itzá (México)</h3>
+        <div class="col-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/tajma2.png') }}" class="img-fluid"
+                alt="Mausoleo de mármol.">
+        </div>
     </div>
-
-    <div class="col-12 col-md-6">
-        <p>Antigua ciudad de la civilización maya ubicada en Yucatán.
-            Su construcción principal, la Pirámide de Kukulcán, está alineada astronómicamente: durante los equinoccios,
-            la sombra forma la figura de una serpiente descendiendo por las escaleras.
-            Era un centro político, religioso y científico.
-            Refleja el avanzado conocimiento matemático y astronómico de los mayas.</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Chichén Itzá">
-    </div>
-
-    <div class="col-12 pt-5">
-        <h3>Cristo Redentor (Brasil)</h3>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <p>Situado en la cima del Cerro del Corcovado en Río de Janeiro, esta estatua de 30 metros de alto representa a
-            Cristo con los brazos abiertos, símbolo de paz y acogida.
-            Fue inaugurada en 1931 y construida con hormigón armado y piedra jabón.
-            Además de su valor religioso, es un ícono cultural y turístico de Brasil.</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Cristo Redentor">
-    </div>
-
-    <div class="col-12 pt-5">
-        <h3>Machu Picchu (Perú)</h3>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <p>Antigua ciudad inca construida en el siglo XV, ubicada a más de 2,400 metros de altura en los Andes.
-            Se cree que fue un centro religioso o residencia real del emperador Pachacútec.
-            Fue redescubierta en 1911 por Hiram Bingham.
-            Su arquitectura se adapta perfectamente al entorno natural, con terrazas agrícolas, templos y estructuras de
-            piedra encajadas con precisión asombrosa.</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Machu Picchu">
-    </div>
-
-    <div class="col-12 pt-5">
-        <h3>Taj Mahal (India)</h3>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <p>Construido en el siglo XVII por el emperador Shah Jahan en memoria de su esposa Mumtaz Mahal.
-            Es un mausoleo de mármol blanco decorado con piedras preciosas y simetría perfecta.
-            Simboliza el amor eterno y es una de las obras arquitectónicas más bellas del mundo.
-            Su diseño combina estilos islámicos, persas e indios.</p>
-    </div>
-
-    <div class="col-12 col-md-6">
-        <img src="..." class="img-fluid" alt="Taj Mahal">
-    </div>
-
 </section>
 
 {% endblock %}
