@@ -1,7 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -22,9 +21,13 @@ def maravillas():
 def acerca():
     return render_template('acerca.html')
 
-@app.route('/crearCuenta')
+@app.route('/formulario')
 def crear_cuenta():
-    return render_template('creacuenta.html')
+    return render_template('formulario.html')
+
+@app.route('/sesion')
+def iniciar_sesion():
+    return render_template('sesion.html')
 
 if __name__=='__main__':
     app.run(debug=True)

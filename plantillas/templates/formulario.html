@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block titulo %}Formulario{% endblock %}
+
+{% block contenido %}
+
+<section class="container-fluid">
+    <h1 class="text-center text-primary">Mi primer formulario</h1>
+    <h2 class="text-center">Crea una cuenta</h2>
+    <p class="text-center">Es rápido y fácil.</p>
+    <section class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <form method="post" action="{{ url_for('formulario') }}">
+                <section class="row">
+                    <div class=" col-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre </label>
+                        <input type="text" required value="class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class=" col-6 mb-3">
+                        <label for="apellido" class="form-label">Apellido </label>
+                        <input type="text" required class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                </section>
+
+                <section class="row">
+                    <p>Fecha de nacimiento</p>
+                    <div class=" col-4 mb-3">
+                        <label for="dia" class="form-label">Dia </label>
+                        <input type="number" required class="form-control" id="dia" placeholder="Dia">
+                    </div>
+                    <div class=" col-4 mb-3">
+                        <label for="mes" class="form-label">Mes </label>
+                        <input type="number" required class="form-control" id="mes" placeholder="Mes">
+                    </div>
+                    <div class=" col-4 mb-3">
+                        <label for="año" class="form-label">Año </label>
+                        <input type="number" required class="form-control" id="año" placeholder="Año">
+                    </div>
+                </section>
+
+                <section class="row">
+                    <p>Género</p>
+                    <div class="form-check col-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" required name="genero" id="mujer">
+                            <label class="form-check-label" for="mujer">
+                                Mujer
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check col-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" required name="genero" id="hombre">
+                            <label class="form-check-label" for="hombre">
+                                Hombre
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check col-4 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" required name="genero" id="personalizado">
+                            <label class="form-check-label" for="personalizado">
+                                Personalizado
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-12 mb-3">
+                        <label for="cuenta" class="form-label">Número de celular o correo electrónico </label>
+                        <input type="text" required class="form-control" id="cuenta"
+                            placeholder="Número de celular o correo electrónico">
+                    </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-12 mb-3">
+                        <label for="contra" class="form-label">Contraseña </label>
+                        <input type="password" required class="form-control" id="contra" placeholder="Contraseña nueva">
+                    </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-12 mb-3">
+                        <p>Es posible que las personas que usan nuestro servicio hayan subido tu información de
+                            contacto
+                            a Facebook
+                            <a href="#">Más información</a>.
+                        </p>
+                        <p>Al hacer clic en "Registrarte", aceptas nuestras <a href="#">Condiciones</a>, la <a
+                                href="#">Politica de privacidad</a> y la
+                            <a href="#">Politica de cookies</a>. Es posible que te enviemos notificaciones por SMS,
+                            que
+                            puedes
+                            desactivar cuando quieras.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="row text-center mb-3">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Registrarse</button>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <a href="#">¿Ya tienes una cuenta?</a>
+                    </div>
+                </section>
+
+            </form>
+        </div>
+    </section>
+</section>
+
+{% endblock %}
