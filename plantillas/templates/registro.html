@@ -10,17 +10,35 @@
     <p class="text-center">Es rápido y fácil.</p>
     <section class="row justify-content-center">
         <div class="col-12 col-md-6">
+            <div class="container mt-4">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ 'danger' if category == 'error' else 'danger' }} alerts-dismissible fade show"
+                                role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith%}
+            </div>
 
             <form method="post" action="/registrame">
                 <section class="row">
                     <div class=" col-6 mb-3">
                         <label for="nombre" class="form-label">Nombre </label>
-                        <input type="text" required minlength="3" maxlength="100" value = "{{ request.form.get('nombre', '')}}" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" required minlength="3" maxlength="100"
+                            value="{{ request.form.get('nombre', '')}}" class="form-control" name="nombre" id="nombre"
+                            placeholder="Nombre">
                     </div>
                     <div class=" col-6 mb-3">
                         <label for="apellido" class="form-label">Apellido </label>
-                        <input type="text" required minlength="3" maxlength="100" value = "{{ request.form.get('apellido', '')}}" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
-                        
+                        <input type="text" required minlength="3" maxlength="100"
+                            value="{{ request.form.get('apellido', '')}}" class="form-control" name="apellido"
+                            id="apellido" placeholder="Apellido">
+
                     </div>
                 </section>
 
@@ -28,15 +46,18 @@
                     <p>Fecha de nacimiento</p>
                     <div class=" col-4 mb-3">
                         <label for="dia" class="form-label">Dia </label>
-                        <input type="number" required class="form-control" id="dia" name="dia" placeholder="Dia" min="1" max="31" value = "{{ request.form.get('dia', '')}}">
+                        <input type="number" required class="form-control" id="dia" name="dia" placeholder="Dia" min="1"
+                            max="31" value="{{ request.form.get('dia', '')}}">
                     </div>
                     <div class=" col-4 mb-3">
                         <label for="mes" class="form-label">Mes </label>
-                        <input type="number" required class="form-control" id="mes" name="mes" placeholder="Mes" min="1" max="12" value = "{{ request.form.get('mes', '')}}">
+                        <input type="number" required class="form-control" id="mes" name="mes" placeholder="Mes" min="1"
+                            max="12" value="{{ request.form.get('mes', '')}}">
                     </div>
                     <div class=" col-4 mb-3">
                         <label for="año" class="form-label">Año </label>
-                        <input type="number" required class="form-control" id="año" name="año"placeholder="Año" min="1900" max="2025" value = "{{ request.form.get('año', '')}}">
+                        <input type="number" required class="form-control" id="año" name="año" placeholder="Año"
+                            min="1900" max="2025" value="{{ request.form.get('año', '')}}">
                     </div>
                 </section>
 
@@ -71,27 +92,28 @@
                 <section class="row">
                     <div class="col-12 mb-3">
                         <label for="cuenta" class="form-label">Número de celular o correo electrónico </label>
-                        <input type="text" required minlength="5" maxlength="100" value = "{{ request.form.get('cuenta', '')}}" class="form-control" name="cuenta" id="cuenta"
-                            placeholder="Número de celular o correo electrónico" 
+                        <input type="text" required minlength="5" maxlength="100"
+                            value="{{ request.form.get('cuenta', '')}}" class="form-control" name="cuenta" id="cuenta"
+                            placeholder="Número de celular o correo electrónico"
                             pattern="^([0-9]{10,15}|[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,})$"
-                            title="Ingresa un número de telefono o un correo válido."> 
-
-
+                            title="Ingresa un número de telefono o un correo válido.">
                     </div>
                 </section>
 
                 <section class="row">
                     <div class="col-12 mb-3">
                         <label for="contra" class="form-label">Contraseña </label>
-                        <input type="password" required minlength="8" maxlength="50" value = "{{ request.form.get('contra', '')}}"class="form-control" 
-                        name="contra" id="contra" placeholder="Contraseña nueva" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Debe contener al menos un número, una mayúscula y una caracter especial.">
+                        <input type="password" required minlength="8" maxlength="50"
+                            value="{{ request.form.get('contra', '')}}" class="form-control" name="contra" id="contra"
+                            placeholder="Contraseña nueva" 
+                            title="Debe contener al menos un número, una mayúscula y una caracter especial.">
                     </div>
 
                     <div class="col-12 mb-3">
                         <label for="confirmar" class="form-label">Confirmar contraseña </label>
-                        <input type="password" required minlength="8" maxlength="50" value = "{{ request.form.get('confirmar', '')}}" class="form-control" 
-                        name="confirmar" id="confirmar" placeholder="Confirmar contraseña">
+                        <input type="password" required minlength="8" maxlength="50"
+                            value="{{ request.form.get('confirmar', '')}}" class="form-control" name="confirmar"
+                            id="confirmar" placeholder="Confirmar contraseña">
                     </div>
                 </section>
 
