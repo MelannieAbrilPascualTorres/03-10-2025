@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 
-app.config['SECRET_KEY'] = 'una_clave_secreta_muy_larga_dificil_de_adivinar'
-
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = 'una_clave_muy_secreta_muy_larga_y_dificil_de_adivinar'
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -23,14 +24,14 @@ def maravillas():
 def acerca():
     return render_template('acerca.html')
 
-@app.route('/formulario')
+@app.route('/registro')
 def crear_cuenta():
-    return render_template('formulario.html')
+    return render_template('registro.html')
 
 @app.route('/registrando')
-def registram():
+def registrando():
     return ""
-@app.route('/registrando', methdod = ("GET", "POST"))
+@app.route('/registrame', methods = ("GET", "POST"))
 def registrame():
     if request.method == "POST":
         nombre = request.form["nombre"]
@@ -38,11 +39,22 @@ def registrame():
         dia = request.form["dia"]
         mes = request.form["mes"]
         año = request.form["año"]
-        genero = request.form["mujer"]
-        genero = request.form["hombre"]
-        genero = request.form["otro"]
+        genero = request.form["genero"]
         cuenta = request.form["cuenta"]
         contra = request.form["contra"]
+        confirmar = request.form["confirmar"]
+
+        error = None
+        if contra != confirmar:
+            error = "La contraseña no coincide"
+
+        if error != None:
+            flash(error)
+            return render_template('registro.html')
+        else:
+            flash(f"¡Registro exitoso para el usuario: {nombre} {apellido}!")
+            return render_template('registro.html')
+        
 
 @app.route('/sesion')
 def iniciar_sesion():
